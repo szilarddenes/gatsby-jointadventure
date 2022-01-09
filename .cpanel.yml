@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/homes/gpoadmin/public_html/
+    - /bin/cp -R public/* $DEPLOYPATH
