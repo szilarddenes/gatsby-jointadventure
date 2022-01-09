@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://jointadventure.co/sitemap/sitemap-index.xml
+Host: https://jointadventure.co
