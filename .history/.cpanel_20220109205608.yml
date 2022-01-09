@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/homes/jntdvntradmin/public_html/
+    - export DEPLOYPATH=/homes/jnt/public_html/
     - /bin/cp -R public/* $DEPLOYPATH
