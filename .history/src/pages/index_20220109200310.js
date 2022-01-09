@@ -17,7 +17,7 @@ import JAIcon from "../assets/icons/JAIconNarrow.png"
 export const Animation = styled.div`
   position:relative;
   display: block;
-  padding: 6rem 0;
+  padding: 7rem 0;
 
   .bb::before,
   .bb::after,

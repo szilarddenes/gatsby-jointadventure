@@ -12,12 +12,12 @@ import {
 } from "../components"
 import {BREAKPOINT} from "../utils/constants"
 
-import JAIcon from "../assets/icons/JAIconNarrow.png"
+import JAIcon from "../assets/icons/JAIcon.png"
 
 export const Animation = styled.div`
   position:relative;
   display: block;
-  padding: 6rem 0;
+  padding: 10rem;
 
   .bb::before,
   .bb::after,
@@ -30,10 +30,10 @@ export const Animation = styled.div`
   }
 
   .bb {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     margin: auto;
-    background: url("${JAIcon}") no-repeat 55%/95% #000;
+    background: url("${JAIcon}") no-repeat 50%/70% #000;
     color: #00ffbb;
     box-shadow: inset 0 0 0 1px rgba(0, 255, 187, 0.5);
     border-radius: 50%;
@@ -63,10 +63,10 @@ export const Animation = styled.div`
       clip: rect(0px, 2px, 110px, 0px);
     }
     50% {
-      clip: rect(109px, 110px, 110px, 0px);
+      clip: rect(218px, 110px, 110px, 0px);
     }
     75% {
-      clip: rect(0px, 110px, 110px, 109px);
+      clip: rect(0px, 110px, 110px, 1px);
     }
   }
 `

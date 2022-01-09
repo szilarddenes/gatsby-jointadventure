@@ -12,12 +12,12 @@ import {
 } from "../components"
 import {BREAKPOINT} from "../utils/constants"
 
-import JAIcon from "../assets/icons/JAIconNarrow.png"
+import JAIcon from "../assets/icons/JAIcon.png"
 
 export const Animation = styled.div`
-  position:relative;
-  display: block;
-  padding: 6rem 0;
+  .bbWrap {
+    position:relative;
+  }
 
   .bb::before,
   .bb::after,
@@ -30,10 +30,10 @@ export const Animation = styled.div`
   }
 
   .bb {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     margin: auto;
-    background: url("${JAIcon}") no-repeat 55%/95% #000;
+    background: url("${JAIcon}") no-repeat 50%/70% #000;
     color: #00ffbb;
     box-shadow: inset 0 0 0 1px rgba(0, 255, 187, 0.5);
     border-radius: 50%;
@@ -57,16 +57,16 @@ export const Animation = styled.div`
   @keyframes clipMe {
     0%,
     100% {
-      clip: rect(0px, 110px, 2px, 0px);
+      clip: rect(0px, 220px, 2px, 0px);
     }
     25% {
-      clip: rect(0px, 2px, 110px, 0px);
+      clip: rect(0px, 2px, 220px, 0px);
     }
     50% {
-      clip: rect(109px, 110px, 110px, 0px);
+      clip: rect(218px, 220px, 220px, 0px);
     }
     75% {
-      clip: rect(0px, 110px, 110px, 109px);
+      clip: rect(0px, 220px, 220px, 218px);
     }
   }
 `
@@ -111,7 +111,9 @@ export default function Home({data}) {
       <Layout>
         <Hero>
             <Animation>
+          <div className="bbWrap">
               <div className="bb"></div>
+          </div>
             </Animation>
           <TextHome>
             A creative web agency, who solves your problem, and promotes your
