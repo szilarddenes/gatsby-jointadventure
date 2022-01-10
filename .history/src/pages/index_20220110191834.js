@@ -65,9 +65,7 @@ export const Animation = styled.div`
   }
 
   @-webkit-keyframes clipMe {
-    0%{
-      clip: rect(0px, 110px, 2px, 0px);
-    },
+    0%
     25% {
       clip: rect(0px, 2px, 110px, 0px);
     }
@@ -83,9 +81,10 @@ export const Animation = styled.div`
   }
 
   @keyframes clipMe {
-    0%{
+    0%,
+    100% {
       clip: rect(0px, 110px, 2px, 0px);
-    },
+    }
     25% {
       clip: rect(0px, 2px, 110px, 0px);
     }
@@ -94,9 +93,6 @@ export const Animation = styled.div`
     }
     75% {
       clip: rect(0px, 110px, 110px, 109px);
-    },
-    100% {
-      clip: rect(0px, 110px, 2px, 0px);
     }
   }
 `

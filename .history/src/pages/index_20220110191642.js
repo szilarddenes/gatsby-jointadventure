@@ -40,7 +40,7 @@ export const Animation = styled.div`
     border-radius: 50%;
   }
 
-
+  
   .bb::before,
   .bb::after {
     content: "";
@@ -52,22 +52,20 @@ export const Animation = styled.div`
             animation: clipMe 8s linear infinite;
   }
 
-
   .bb::before {
     -webkit-animation-delay: -4s;
             animation-delay: -4s;
   }
-
-
   .bb:hover::after,
   .bb:hover::before {
     background-color: rgba(0, 255, 187, 0.3);
   }
 
   @-webkit-keyframes clipMe {
-    0%{
+    0%,
+    100% {
       clip: rect(0px, 110px, 2px, 0px);
-    },
+    }
     25% {
       clip: rect(0px, 2px, 110px, 0px);
     }
@@ -76,16 +74,14 @@ export const Animation = styled.div`
     }
     75% {
       clip: rect(0px, 110px, 110px, 109px);
-    },
-    100% {
-      clip: rect(0px, 110px, 2px, 0px);
     }
   }
 
   @keyframes clipMe {
-    0%{
+    0%,
+    100% {
       clip: rect(0px, 110px, 2px, 0px);
-    },
+    }
     25% {
       clip: rect(0px, 2px, 110px, 0px);
     }
@@ -94,9 +90,6 @@ export const Animation = styled.div`
     }
     75% {
       clip: rect(0px, 110px, 110px, 109px);
-    },
-    100% {
-      clip: rect(0px, 110px, 2px, 0px);
     }
   }
 `
