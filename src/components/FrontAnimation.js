@@ -67,7 +67,7 @@ const Animation = styled.div`
 }
 `
 
-export default function Globe() {
+export default function FrontAnimation() {
   return (
     <>
       <Animation>

@@ -1,10 +1,10 @@
 {
-  "name": "lewis-gatsby-starter-blog",
-  "description": "A custom Gatsby starter template to start a blog or personal website.",
-  "author": "@lewislbr",
+  "name": "jointadventure company website",
+  "description": "A custom Gaa company who does: web development, advertisement, marketing, frontend, backend, fullstack, wordpress, reactjs javascript, css, html, facebook advertisement, instagram advertisementtsby starter template to start a blog or personal website.",
+  "author": "@sd",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lewislbr/lewis-gatsby-starter-blog"
+    "url": ""
   },
   "version": "0.1.0",
   "license": "MIT",
@@ -26,6 +26,7 @@
     "gatsby-plugin-offline": "^3.6.0",
     "gatsby-plugin-postcss": "^5.4.0",
     "gatsby-plugin-react-helmet": "^3.6.0",
+    "gatsby-plugin-react-svg": "^3.1.0",
     "gatsby-plugin-robots-txt": "^1.5.3",
     "gatsby-plugin-sharp": "^2.10.1",
     "gatsby-plugin-sitemap": "^2.8.0",
