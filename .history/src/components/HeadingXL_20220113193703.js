@@ -14,6 +14,6 @@ background: radial-gradient(circle, rgba(0,255,187,1) 0%, rgba(0,153,102,1) 100%
   -webkit-text-fill-color: transparent;
 
   @media (max-width: ${BREAKPOINT}px) {
-    font-size: 140%;
+    font-size: 28.56px;
   }
 `
