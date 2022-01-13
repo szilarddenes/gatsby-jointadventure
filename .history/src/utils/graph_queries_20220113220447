@@ -1,0 +1,15 @@
+query FileQuery {
+  exampleImage: file(
+    extension: {eq: "png"},
+    name: {eq: "JAIcon"}
+  ) {
+    childImageSharp {
+      fluid {
+        src
+        srcSet
+        sizes
+        srcSetWebp
+      }
+    }
+  }
+}

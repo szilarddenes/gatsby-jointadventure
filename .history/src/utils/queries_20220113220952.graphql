@@ -1,0 +1,42 @@
+
+
+query Images {
+  exampleImage: file(extension: {eq: "png"}, name: {eq: "JAIcon"}) {
+    childImageSharp {
+      fluid {
+        src
+        srcSet
+        sizes
+        srcSetWebp
+      }
+    }
+  }
+}
+
+
+
+
+query {
+    allMarkdownRemark(sort: {fields: [frontmatter___id], order: ASC}) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 756, quality:100) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
+          }
+          fields {
+            slug
+          }
+          excerpt
+        }
+      }
+    }
+  }
