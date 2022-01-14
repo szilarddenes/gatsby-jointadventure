@@ -1,0 +1,17 @@
+c {
+  color: var(--accent-color);
+  display: inline-block;
+  font-weight: 700;
+}
+centered {
+  text-align: center;
+}
+justify {
+  text-align: justify;
+}
+Img {
+  border: solid 1px #fff;
+}
+Img:hover {
+  border: solid 2px var(--accent-color);
+}

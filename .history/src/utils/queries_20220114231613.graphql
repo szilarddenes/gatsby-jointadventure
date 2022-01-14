@@ -1,0 +1,77 @@
+query Images {
+  exampleImage: file(extension: {eq: "png"}, name: {eq: "JAIcon"}) {
+    childImageSharp {
+      fluid {
+        src
+        srcSet
+        sizes
+        srcSetWebp
+      }
+    }
+  }
+}
+
+query {
+  allMarkdownRemark(sort: {fields: [frontmatter___id], order: ASC}) {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          date(formatString: "MMMM DD, YYYY")
+          featuredImage {
+            childImageSharp {
+              fluid(maxWidth: 756, quality: 100) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+        }
+        fields {
+          slug
+        }
+        excerpt
+      }
+    }
+  }
+}
+
+query ($slug: String!) {
+  markdownRemark(fields: {slug: {eq: $slug}}) {
+    html
+    frontmatter {
+      title
+      date(formatString: "MMMM DD, YYYY")
+      tags
+      id
+      website
+    }
+  }
+}
+
+  const data = useStaticQuery(graphql`
+    query {
+      bcgImg: file(extension: {eq: "png"}, name: {eq: "JAIconNarrow"}) {
+        childImageSharp {
+          fluid(maxWidth: 800, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `)
+
+
+export const markDown = graphql `
+    query{
+    allMarkdownRemark(
+      filter: {id: {eq: "7fe72adc-0993-53be-a6da-a401cdd93685"}}
+    ) {
+      nodes {
+        id
+        html
+      }
+    }
+    }
+
+`
