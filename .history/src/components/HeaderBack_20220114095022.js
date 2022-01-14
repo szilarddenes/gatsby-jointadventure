@@ -1,0 +1,28 @@
+import React from "react"
+import {Link} from "gatsby"
+import styled from "styled-components"
+import {FixedBar} from "../components"
+import {BREAKPOINT} from "../utils/constants"
+import ArrowBack from "assets/icons/ArrowBack.svg"
+
+const Icon = styled.svg`
+  color:#0fb,
+  height: 34px,
+  maxWidth: 100%,
+  maxHeight: 100%,
+  width: 34px,
+  marginTop:"10px",
+
+`
+
+
+
+export function HeaderBack() {
+  return (
+    <FixedBar>
+      <Link to="/">
+        <ArrowBack style={{marginTop:"10px",stroke:"#0fb",fill:"#0fb"}}/>
+      </Link>
+    </FixedBar>
+  )
+}
